@@ -1,0 +1,101 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    padding: 10px 0px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-container{
+    border: 2px solid #a5a5a5;
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    /* display: grid;
+    grid-template-columns: repeat(4 , 1fr); */
+}
+
+.top{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    padding: 10px;
+    border-bottom: 2px solid blue;
+}
+.status{
+    display: flex;
+    flex-flow: wrap column;
+}
+.status-chip{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.case-number{
+    font-size: 14px;
+    color: #A5A5A5;
+}
+.bottom{
+    padding: 10px;
+    margin: 5px;
+}
+.from-location{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px;
+}
+.to-location{
+    margin: 5px;
+    color: #a5a5a5;
+    margin-top: 15px;
+}
+.price{
+    float: right;
+}
+.completed{
+    background-color: green;
+    color: white;
+}
+.pending{
+    background-color: yellow;
+}
+.approved{
+    background-color: royalblue;
+    color: white;
+}
+.cancelled{
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+};
+
+@media (max-width: 600){
+    .card-container{
+        grid-template-columns: auto;
+    }
+}
